@@ -1,0 +1,4 @@
+ANY_VALUE (m.MemberID) AS MemberID, ANY_VALUE(m.LastName) AS LastName, m.FirstName from Member m, Entry e  
+WHERE m.MemberID=e.MemberID 
+GROUP BY e.MemberID 
+HAVING e.Year <> 2013;
