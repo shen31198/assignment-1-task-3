@@ -1,0 +1,3 @@
+cat annotation.tab |sort >annotation1.tab 
+cat expression.tab |sort >expression1.tab 
+join -o 1.1,1.2,2.2,1.3 annotation1.tab expression1.tab > result.tab
